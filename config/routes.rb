@@ -2,6 +2,7 @@ Blog::Application.routes.draw do
   root  'static_pages#home'
 
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
   get "static_pages/home"
   get "static_pages/resume"
   get "static_pages/projects"
@@ -9,6 +10,8 @@ Blog::Application.routes.draw do
 
 
   match '/signup',    to: 'users#new',              via: 'get'
+  match '/signin',    to: 'sessions#new',           via: 'get'
+  match '/signout',   to: 'sessions#destroy',       via: 'delete'
   match '/resume',    to: 'static_pages#resume',    via: 'get'
   match '/projects',  to: 'static_pages#projects',  via: 'get'
   match '/about',     to: 'static_pages#about',     via: 'get'
