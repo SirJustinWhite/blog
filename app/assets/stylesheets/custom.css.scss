@@ -117,3 +117,26 @@ p {
 
 /* END Sidebar */
 
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid ;
+    &:last-child {
+      border-bottom: 1px solid;
+    }
+  }
+}
+
+  .btn > a {
+    color: white;
+  }
+
+  .btn-default > a {
+    color: #263648;
+  }
+
