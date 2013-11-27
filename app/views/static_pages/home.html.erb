@@ -1,5 +1,55 @@
 <% provide(:title, 'Home') %>
 
-<div class="container well col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-	<h1>Home</h1>
-</div>
+
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9 well">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>Hello, world!</h1>
+            <p>My name is <strong>Justin White</strong>. I am 24 years old and live in Chicago. I study Information Technology at <%= link_to "DePaul University", "http://www.cdm.depaul.edu/" %>, and am an alumni of <a href="http://twitter.com/#!/StarterLeague">@starterleauge</a>. This website is a place for me to post my rambling, show what I'm working on, and share my life.</p>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-6 col-lg-4">
+              <h2>About Me</h2>
+		      <p>I love lots of things in life. Chicago. Ruby on Rails. <a href="https://github.com/SirJustinWhite">Programming</a>. Backpacking. <a href="http://nols.edu">NOLS</a>. <a href="http://goo.gl/72Ahu">Australia</a>. <a href="/assets/dogs.jpg">My Dogs</a>. <a href="http://sts9.com">Music</a>. <a href="http://dmkburgerbar.com">Cheeseburgers</a>. <a href="http://lagunitas.com">Beer</a>. <a href="http://braid-game.com/">Games</a>.</p>
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4">
+            <h2>DePaul Silcion Valley IT Cluster Research Trip</h2>
+          		<div class="thumbnail">
+           			<%= image_tag("http://i.imgur.com/bkMgEvS.jpg") %>
+            		<div class="caption">
+	              		<p>During the summer of 2013, I was lucky enough to get to join <%= link_to "Professor Adelakun", "http://facweb.cs.depaul.edu/yele/" %> on a trip to Silicon Valley to visit the big tech companies there and study a real IT Cluster. Our journey took us to many great companies like Facebook, IBM, and Google to name a few.</p>
+	              		<p><a class="btn btn-default" href="http://facweb.cs.depaul.edu/yele/Course/Silicon/index.html" role="button">Follow our trip here &raquo;</a></p>
+            		</div>
+          		</div>
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4">
+              <h2>Photos</h2>
+              <p>I love to take photos. Follow my life in photos here</p>
+              <p><a class="btn btn-default" href="#" role="button">View Photo Gallery &raquo;</a></p>
+            </div><!--/span-->
+
+          </div><!--/row-->
+        </div><!--/span-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+            <a href="/home" class="list-group-item active">Home</a>
+            <a href="#" class="list-group-item">Blog</a>
+            <a href="/resume" class="list-group-item">Résumé</a>
+            <a href="/projects" class="list-group-item">Projects</a>
+            <a href="#" class="list-group-item">Photo Gallery</a>
+            <a href="/about" class="list-group-item">About this Page</a>
+          </div>
+        </div><!--/span-->
+
+      </div><!--/row-->
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="offcanvas.js"></script>
