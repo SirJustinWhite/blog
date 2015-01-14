@@ -1,3 +1,53 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+//.thumbnail img { min-height:250px; height:250px; }
+
+.thumbnail{
+    height: 400px;
+    overflow: auto;
+}
+
+hr.resume {
+	margin-top: 0px;
+}
+
+h2.resume { 
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+dl.pull-right {
+	text-align: right;
+}
+
+//Resume CSS
+#resumeAll {
+	color: #eee;
+}
+
+#rHeader {
+	color: #222;
+	background-color: #eee;
+}
+
+
+#rEducation {
+	background-color: #777;
+}
+
+
+#rExperience {
+	background-color: #555;
+}
+
+
+#rActivities {
+	background-color: #333;
+}
+
+#rSkills {
+	background-color: #222;
+}
